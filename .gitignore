@@ -1,9 +1,9 @@
-# ── Environment & Secrets ─────────────────────────────────────
+# â”€â”€ Environment & Secrets â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 .env
 .env.local
 *.env
 
-# ── Django ────────────────────────────────────────────────────
+# â”€â”€ Django â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 __pycache__/
 *.py[cod]
 *.pyo
@@ -17,53 +17,53 @@ db.sqlite3
 .mypy_cache/
 *.log
 
-# ── Virtual Environments ──────────────────────────────────────
+# â”€â”€ Virtual Environments â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 venv/
 env/
 .venv/
 ENV/
 
-# ── Credentials & Sensitive Data ─────────────────────────────
-# NEVER commit these — they contain real login credentials
+# â”€â”€ Credentials & Sensitive Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# NEVER commit these â€” they contain real login credentials
 credentials.xlsx
 ~$credentials.xlsx
 ui_runtime_creds.json
-*.pkl                   # Selenium session cookies (e.g. quora_cookies.pkl)
+*.pkl
 batch_run_*.json
 single_run_*.json
 
-# ── Automation Runtime Outputs ────────────────────────────────
-results.csv             # Scan results — generated at runtime
+# â”€â”€ Automation Runtime Outputs â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+results.csv
 automation.log
 quora_automation.log
 tumblr_debug.log
 *.log
 screenshots/
 temp_driver/
-automation_profile/     # Chrome persistent profile (large, personal)
-.wdm/                   # WebDriverManager cache
+automation_profile/
+.wdm/
 
-# ── WebDriver Binaries ────────────────────────────────────────
+# â”€â”€ WebDriver Binaries â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 drivers/
 
-# ── Debug / Error Screenshots ────────────────────────────────
+# â”€â”€ Debug / Error Screenshots â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 error_screenshot.png
 navigation_error.png
 reddit_login_current_view.png
 *_published_*.png
 *_debug.png
 
-# ── IDE ───────────────────────────────────────────────────────
+# â”€â”€ IDE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# ── OS ────────────────────────────────────────────────────────
+# â”€â”€ OS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 .DS_Store
 Thumbs.db
 
-# ── Egg Info ─────────────────────────────────────────────────
+# â”€â”€ Egg Info â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 *.egg-info/
 dist/
 build/
