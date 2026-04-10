@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid p-4">
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2 class="fw-bold mb-1 text-dark">Analytics Dashboard</h2>
+            <p class="text-muted mb-0">Detailed analysis of your automation runs</p>
+        </div>
+        <a href="{% url 'dashboard' %}" class="btn btn-light">
+            <i class="fas fa-arrow-left me-2"></i>Back to Dashboard
+        </a>
+    </div>
+
+    <!-- Analytics Controls -->
+    <div class="card border-0 shadow-sm mb-4">
+        <div class="card-body">
+            <div class="d-flex justify-content-center gap-3">
+                <button class="btn btn-primary px-4" onclick="updateChart('daily')">Daily</button>
+                <button class="btn btn-outline-primary px-4" onclick="updateChart('weekly')">Weekly</button>
+                <button class="btn btn-outline-primary px-4" onclick="updateChart('monthly')">Monthly</button>
+                <button class="btn btn-outline-primary px-4" onclick="updateChart('yearly')">Yearly</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chart Container -->
+    <div class="card border-0 shadow-sm">
+        <div class="card-body p-4">
+            <h5 class="card-title mb-4 text-dark" id="chartTitle">Daily Performance</h5>
+            <div style="height: 400px;">
+                <canvas id="performanceChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    // Data from Django
+    const analyticsData = {
+        daily: {{ daily_data|safe }},
+        weekly: {{ weekly_data|safe }},
+        monthly: {{ monthly_data|safe }},
+        yearly: {{ yearly_data|safe }}
+    };
+
+    let currentChart = null;
+
+    function initChart() {
+        const ctx = document.getElementById('performanceChart').getContext('2d');
+        
+        currentChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [],
+                datasets: [
+                    {
+                        label: 'Success',
+                        data: [],
+                        backgroundColor: 'rgba(75, 192, 192, 0.6)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1,
+                        borderRadius: 4
+                    },
+                    {
+                        label: 'Failed',
+                        data: [],
+                        backgroundColor: 'rgba(255, 99, 132, 0.6)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1,
+                        borderRadius: 4
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(0,0,0,0.05)'
+                        },
+                        ticks: {
+                            precision: 0
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    }
+                }
+            }
+        });
+
+        updateChart('daily');
+    }
+
+    function updateChart(period) {
+        // Update buttons
+        document.querySelectorAll('.btn-primary, .btn-outline-primary').forEach(btn => {
+            if(btn.textContent.toLowerCase().includes(period)) {
+                btn.classList.remove('btn-outline-primary');
+                btn.classList.add('btn-primary');
+            } else {
+                btn.classList.add('btn-outline-primary');
+                btn.classList.remove('btn-primary');
+            }
+        });
+
+        // Update Title
+        document.getElementById('chartTitle').textContent = period.charAt(0).toUpperCase() + period.slice(1) + ' Performance';
+
+        // Update Data
+        const data = analyticsData[period];
+        if (data) {
+            currentChart.data.labels = data.labels;
+            currentChart.data.datasets[0].data = data.success;
+            currentChart.data.datasets[1].data = data.failed;
+            currentChart.update();
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', initChart);
+</script>
+{% endblock %}

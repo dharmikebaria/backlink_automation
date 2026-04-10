@@ -1,0 +1,329 @@
+{% extends 'base.html' %}
+
+{% block title %}Image Gallery - Backlink AI{% endblock %}
+{% block page_title %}Image Gallery{% endblock %}
+
+{% block extra_css %}
+<style>
+        .upload-area-minimal {
+            border: 2px dashed #a2a9b1;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.5);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        [data-theme="dark"] .upload-area-minimal {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .upload-area-minimal:hover, .upload-area-minimal.dragover {
+            border-color: #667eea;
+            background: rgba(102, 126, 234, 0.05);
+        }
+        
+        [data-theme="dark"] .upload-area-minimal:hover {
+            background: rgba(102, 126, 234, 0.1);
+        }
+
+        .icon-circle {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: rgba(102, 126, 234, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .upload-area-minimal:hover .icon-circle {
+            background: var(--primary-gradient);
+            color: white !important;
+        }
+        
+        .upload-area-minimal:hover .icon-circle i {
+            color: white !important;
+        }
+
+        .image-card {
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            background: var(--card-bg);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+            aspect-ratio: 1;
+        }
+
+    .image-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+
+    .image-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .image-card:hover img {
+        transform: scale(1.08);
+    }
+
+    .image-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        padding: 20px 15px;
+        opacity: 0;
+        transition: all 0.3s ease;
+        transform: translateY(10px);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .image-card:hover .image-overlay {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .action-btn {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.2);
+        backdrop-filter: blur(5px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        transition: all 0.2s;
+        border: 1px solid rgba(255,255,255,0.3);
+        margin-left: 5px;
+        cursor: pointer;
+    }
+
+    .action-btn:hover {
+        background: white;
+        color: #333;
+        transform: scale(1.1);
+    }
+
+    .action-btn.delete:hover {
+        background: #ff4757;
+        color: white;
+        border-color: #ff4757;
+    }
+
+    .file-name {
+        color: white;
+        font-size: 0.9rem;
+        font-weight: 500;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 120px;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-0">
+    
+    <!-- Upload Section -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <form method="POST" enctype="multipart/form-data" id="uploadForm">
+                {% csrf_token %}
+                <input type="hidden" name="action" value="upload">
+                
+                <div class="float-card p-3">
+                    <div class="upload-area-minimal p-3 d-flex align-items-center justify-content-between" id="dropZone" onclick="document.getElementById('fileInput').click()">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-circle me-3">
+                                <i class="fas fa-cloud-upload-alt text-primary fa-lg"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Upload New Image</h6>
+                                <small class="text-muted">Click to browse or drag & drop files here</small>
+                            </div>
+                        </div>
+                        <div class="d-none d-sm-block">
+                            <span class="badge bg-light text-secondary border">JPG, PNG, GIF, WEBP</span>
+                        </div>
+                        <input type="file" name="image_file" id="fileInput" class="d-none" accept=".png,.jpg,.jpeg,.gif,.webp,.bmp" onchange="this.form.submit()">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="row g-4">
+        {% for image in images %}
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="image-card">
+                <img src="{% url 'serve_image' image %}" alt="{{ image }}" loading="lazy">
+                
+                <div class="image-overlay">
+                    <div class="file-name" title="{{ image }}">{{ image }}</div>
+                    <div class="d-flex">
+                        <!-- View Button -->
+                        <button class="action-btn" onclick="openViewModal('{% url 'serve_image' image %}', '{{ image|escapejs }}')" title="View">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                        
+                        <!-- Rename Button -->
+                        <button class="action-btn" onclick="openRenameModal('{{ image|escapejs }}')" title="Rename">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        
+                        <!-- Delete Button -->
+                        <form method="POST" class="d-inline" onsubmit="return confirm('Delete this image?');">
+                            {% csrf_token %}
+                            <input type="hidden" name="image_name" value="{{ image }}">
+                            <button type="submit" name="action" value="delete" class="action-btn delete" title="Delete">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-12 text-center py-5">
+            <div class="float-card py-5">
+                <i class="fas fa-images fa-4x text-muted opacity-25 mb-3"></i>
+                <h4 class="text-muted">No images found</h4>
+                <p class="text-muted">Upload some images to get started</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- View Image Modal -->
+<div class="modal fade" id="viewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content glass-panel border-0">
+            <div class="modal-header border-0">
+                <h5 class="modal-title fw-bold" id="viewModalTitle">Image View</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center p-0 bg-dark rounded-bottom overflow-hidden d-flex align-items-center justify-content-center" style="min-height: 400px; background: rgba(0,0,0,0.9);">
+                <img id="viewModalImage" src="" alt="View" style="max-width: 100%; max-height: 80vh;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Rename Modal -->
+<div class="modal fade" id="renameModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content glass-panel border-0">
+            <div class="modal-header border-0">
+                <h5 class="modal-title fw-bold">Rename Image</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="action" value="rename">
+                <input type="hidden" name="old_name" id="oldNameInput">
+                
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label text-muted">New Filename</label>
+                        <input type="text" class="form-control form-control-lg border-0 shadow-sm" name="new_name" id="newNameInput" required>
+                        <div class="form-text">Extension will be preserved automatically.</div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary-custom">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // View Modal Logic
+    const viewModal = new bootstrap.Modal(document.getElementById('viewModal'));
+    const viewModalImage = document.getElementById('viewModalImage');
+    const viewModalTitle = document.getElementById('viewModalTitle');
+
+    function openViewModal(src, title) {
+        viewModalImage.src = src;
+        viewModalTitle.textContent = title;
+        viewModal.show();
+    }
+
+    // Rename Modal Logic
+    const renameModal = new bootstrap.Modal(document.getElementById('renameModal'));
+    const oldNameInput = document.getElementById('oldNameInput');
+    const newNameInput = document.getElementById('newNameInput');
+
+    function openRenameModal(filename) {
+        oldNameInput.value = filename;
+        newNameInput.value = filename;
+        renameModal.show();
+        setTimeout(() => newNameInput.focus(), 500);
+    }
+
+    // Drag and Drop Logic
+    const dropZone = document.getElementById('dropZone');
+    const fileInput = document.getElementById('fileInput');
+    const uploadForm = document.getElementById('uploadForm');
+
+    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+        dropZone.addEventListener(eventName, preventDefaults, false);
+    });
+
+    function preventDefaults(e) {
+        e.preventDefault();
+        e.stopPropagation();
+    }
+
+    ['dragenter', 'dragover'].forEach(eventName => {
+        dropZone.addEventListener(eventName, highlight, false);
+    });
+
+    ['dragleave', 'drop'].forEach(eventName => {
+        dropZone.addEventListener(eventName, unhighlight, false);
+    });
+
+    function highlight(e) {
+        dropZone.classList.add('dragover');
+    }
+
+    function unhighlight(e) {
+        dropZone.classList.remove('dragover');
+    }
+
+    dropZone.addEventListener('drop', handleDrop, false);
+
+    function handleDrop(e) {
+        const dt = e.dataTransfer;
+        const files = dt.files;
+
+        if (files.length > 0) {
+            fileInput.files = files;
+            uploadForm.submit();
+        }
+    }
+</script>
+{% endblock %}

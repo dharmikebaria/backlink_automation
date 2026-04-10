@@ -1,0 +1,24 @@
+# ── Django Web Dashboard ──────────────────────────────────────
+Django>=5.2.0
+python-dotenv>=1.0.0      # .env file loading for settings.py
+
+# ── Data Handling ─────────────────────────────────────────────
+pandas>=2.0.0             # Excel/CSV credential loading
+openpyxl>=3.1.0           # Read/write .xlsx credential files
+
+# ── Browser Automation ────────────────────────────────────────
+selenium>=4.15.0          # Core browser automation
+undetected-chromedriver>=3.5.0  # Anti-bot-detection Chrome driver
+webdriver-manager>=4.0.0  # Automatic ChromeDriver management
+
+# ── Image Handling (Windows clipboard paste for post images) ──
+Pillow>=10.0.0            # Image processing for clipboard paste
+pywin32>=306              # Windows clipboard API (Win only)
+# Note: pywin32 is Windows-only. On Linux/Mac this is not needed.
+
+# ── Email Verification (Medium login uses IMAP OTP) ───────────
+# imaplib is part of Python stdlib — no install needed
+
+# ── Testing ───────────────────────────────────────────────────
+pytest>=7.4.0
+pytest-django>=4.7.0

@@ -1,0 +1,5 @@
+My Dev.to Automation Journey
+
+This is a test post created by Python script.
+
+Check out [Google](https://google.com) for more info.

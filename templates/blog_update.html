@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+
+{% block title %}Blog Update - Backlink AI{% endblock %}
+{% block page_title %}Blog Update{% endblock %}
+
+{% block extra_css %}
+<style>
+    .text-primary {
+        color: #764ba2 !important;
+    }
+    .icon-circle-purple {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background-color: #764ba2;
+        color: #ffffff !important;
+    }
+    .icon-pill-purple {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 999px;
+        background-color: #764ba2;
+        color: #ffffff !important;
+        font-size: 0.9rem;
+    }
+    .icon-mini-purple {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 16px;
+        height: 17px;
+        border-radius: 4px;
+        background-color: #764ba2;
+        color: #ffffff !important;
+        font-size: 0.75rem;
+    }
+    .editor-toolbar {
+        border-bottom: 1px solid var(--border-color);
+        padding: 10px;
+        background: var(--primary-bg);
+        border-radius: 10px 10px 0 0;
+    }
+    .editor-btn {
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        color: var(--text-dark);
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    .editor-btn:hover {
+        background: var(--primary-bg);
+        color: #667eea;
+    }
+    #editor {
+        min-height: 400px;
+        max-height: 600px;
+        overflow-y: auto;
+        padding: 20px;
+        background: var(--input-bg);
+        color: var(--text-dark);
+        border-radius: 0 0 10px 10px;
+        outline: none;
+    }
+    #editor:focus {
+        background: var(--input-bg);
+        color: var(--text-dark);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-10">
+        <div class="float-card">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h5 class="fw-bold m-0"><i class="fas fa-pen-fancy me-2 icon-pill-purple"></i>Update Blog Content</h5>
+                <div>
+                     <span class="badge bg-info-subtle text-info">
+                        <i class="fas fa-file-alt me-1"></i> blog.txt
+                     </span>
+                </div>
+            </div>
+
+            <!-- Formatting Instructions -->
+            <div class="p-4 mb-4 rounded-3 bg-light border shadow-sm">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="icon-box icon-circle-purple me-3">
+                        <i class="fas fa-info"></i>
+                    </div>
+                    <h6 class="fw-bold m-0 text-dark">Writing Guidelines</h6>
+                </div>
+                
+                <div class="row g-3 small">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled mb-0 text-muted">
+                            <li class="mb-3 d-flex">
+                                <i class="fas fa-heading mt-1 me-2 icon-pill-purple"></i>
+                                <span><strong class="text-dark">Title:</strong> Write the title on the <strong class="text-dark">first line only</strong>.</span>
+                            </li>
+                            <li class="mb-3 d-flex">
+                                <i class="fas fa-align-left mt-1 me-2 icon-pill-purple"></i>
+                                <span><strong class="text-dark">Content:</strong> Start writing the content from the <strong class="text-dark">second line</strong>.</span>
+                            </li>
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-link mt-1 me-2 icon-mini-purple"></i>
+                                <div>
+                                    <strong class="text-dark">Hyperlinks:</strong> Use format <code class="bg-white px-1 rounded border"> [Text](URL) </code><br>
+                                    <span class="d-block mt-1" style="font-size: 0.85em;">Example: <code class="text-white">[Softtop](https://www.softtop.tech/)</code></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled mb-0 text-muted">
+                            <li class="mb-3 d-flex">
+                                <i class="fas fa-image mt-1 me-2 icon-mini-purple"></i>
+                                <div>
+                                    <strong class="text-dark">Images:</strong> Add on a <strong class="text-dark">new line</strong> as <code class="bg-white px-1 rounded border">{image.ext}</code><br>
+                                    <span class="d-block mt-1" style="font-size: 0.85em;">Example: <code class="text-white">{c1.jpg}</code> (No blank lines before/after)</span>
+                                </div>
+                            </li>
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-stream mt-1 me-2 icon-pill-purple"></i>
+                                <span><strong class="text-dark">Spacing:</strong> No gap required between paragraphs.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <form id="blogUpdateForm" method="POST" action="{% url 'blog_update' %}">
+                {% csrf_token %}
+                
+                <div class="mb-4 border rounded-3 overflow-hidden shadow-sm">
+                    <textarea id="editor" name="content" class="form-control border-0" style="min-height: 400px; max-height: 600px; padding: 20px; background: var(--input-bg); color: var(--text-dark);">{{ blog_content|safe }}</textarea>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="{% url 'dashboard' %}" class="btn btn-light text-muted">
+                        <i class="fas fa-arrow-left me-2"></i>Back
+                    </a>
+                    <button type="submit" class="btn btn-primary-custom btn-lg px-5">
+                        <i class="fas fa-save me-2"></i>Save Changes
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}{% endblock %}

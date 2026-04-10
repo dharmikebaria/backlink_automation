@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}Success - Backlink AI{% endblock %}
+{% block page_title %}Automation Success{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="float-card text-center">
+            <div class="mb-4">
+                <div class="d-inline-flex align-items-center justify-content-center bg-success bg-opacity-10 text-success rounded-circle" style="width: 80px; height: 80px;">
+                    <i class="fas fa-check fa-3x"></i>
+                </div>
+            </div>
+            
+            <h2 class="fw-bold mb-3 text-success">Automation Completed!</h2>
+            <p class="text-muted mb-4 lead">Your script has been executed successfully.</p>
+
+            <div class="text-start bg-light rounded-4 p-4 mb-4">
+                <h5 class="fw-bold mb-3 text-secondary"><i class="fas fa-info-circle me-2"></i>Run Details</h5>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <small class="text-uppercase text-muted fw-bold">Website</small>
+                        <div class="text-break">{{ run_data.credential_url }}</div>
+                    </div>
+                    <div class="col-md-6">
+                        <small class="text-uppercase text-muted fw-bold">Status</small>
+                        <div class="text-success fw-bold">{{ run_data.status }}</div>
+                    </div>
+                    <div class="col-md-6">
+                        <small class="text-uppercase text-muted fw-bold">Username</small>
+                        <div>{{ run_data.credential_username|default:"-" }}</div>
+                    </div>
+                    <div class="col-md-6">
+                        <small class="text-uppercase text-muted fw-bold">Email</small>
+                        <div>{{ run_data.credential_email|default:"-" }}</div>
+                    </div>
+                </div>
+
+                {% if run_data.output %}
+                <div class="mt-4">
+                    <small class="text-uppercase text-muted fw-bold">Console Output</small>
+                    <pre class="bg-dark text-light p-3 rounded-3 mt-1 small" style="max-height: 200px; overflow-y: auto;">{{ run_data.output }}</pre>
+                </div>
+                {% endif %}
+            </div>
+
+            <a href="{% url 'dashboard' %}" class="btn btn-primary-custom px-5 btn-lg">
+                <i class="fas fa-arrow-left me-2"></i>Back to Dashboard
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

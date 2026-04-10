@@ -1,0 +1,69 @@
+# ── Environment & Secrets ─────────────────────────────────────
+.env
+.env.local
+*.env
+
+# ── Django ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+db.sqlite3
+*.sqlite3
+/static/
+/staticfiles/
+/media/
+.pytest_cache/
+.mypy_cache/
+*.log
+
+# ── Virtual Environments ──────────────────────────────────────
+venv/
+env/
+.venv/
+ENV/
+
+# ── Credentials & Sensitive Data ─────────────────────────────
+# NEVER commit these — they contain real login credentials
+credentials.xlsx
+~$credentials.xlsx
+ui_runtime_creds.json
+*.pkl                   # Selenium session cookies (e.g. quora_cookies.pkl)
+batch_run_*.json
+single_run_*.json
+
+# ── Automation Runtime Outputs ────────────────────────────────
+results.csv             # Scan results — generated at runtime
+automation.log
+quora_automation.log
+tumblr_debug.log
+*.log
+screenshots/
+temp_driver/
+automation_profile/     # Chrome persistent profile (large, personal)
+.wdm/                   # WebDriverManager cache
+
+# ── WebDriver Binaries ────────────────────────────────────────
+drivers/
+
+# ── Debug / Error Screenshots ────────────────────────────────
+error_screenshot.png
+navigation_error.png
+reddit_login_current_view.png
+*_published_*.png
+*_debug.png
+
+# ── IDE ───────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── OS ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Egg Info ─────────────────────────────────────────────────
+*.egg-info/
+dist/
+build/

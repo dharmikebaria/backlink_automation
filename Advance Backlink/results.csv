@@ -1,0 +1,615 @@
+2025-12-04T14:20:59.986243,https://me-page.com/,login,failed,No login form found,,,
+2025-12-04T14:21:16.603050,https://www.tumblr.com/,login,failed,No login form found,,,
+2025-12-04T14:21:30.696611,https://www.notion.so/,login,failed,No login form found,,,
+2025-12-04T17:00:55.572540,https://me-page.com/,success,Login successful: Clicked login link and Form filled and submitted,https://me-page.com/login,Log in!,final_20251204_170122_gsugh2.png
+2025-12-04T17:04:56.085446,https://me-page.com/,success,Login successful: Clicked login link and Form filled and submitted,https://admin.me-page.com/projects,Projects,final_20251204_170520_rkegdw.png
+2025-12-04T17:07:20.472973,https://me-page.com/,success,Login successful: Clicked login link and Form filled and submitted,https://admin.me-page.com/projects,Projects,final_20251204_170749_o1y73a.png
+2025-12-04T18:01:50.046487,https://me-page.com/,success,Login successful: Clicked login link and Form filled and submitted,https://admin.me-page.com/projects,Projects,final_20251204_180215_ubtpst.png
+2025-12-04T18:15:50.626223,https://me-page.com/,success,Login successful: Clicked login link and Form filled and submitted,https://admin.me-page.com/projects,Projects,final_20251204_181620_755gh6.png
+2025-12-05T14:54:02.732757,https://me-page.com/,success,Login attempt completed successfully,https://admin.me-page.com/projects,Projects,True,3,True,final_admin_me-page_com_20251205_145428_hl48.png
+2025-12-05T15:13:37.498335,https://www.tumblr.com/,failed,Login failed,final_www_tumblr_com_20251205_151350_n8kz.png
+2025-12-05T15:13:58.489853,https://me-page.com/,failed,Login failed,final_me-page_com_20251205_151413_n5wp.png
+2025-12-05T15:14:21.511586,https://www.notion.so/,failed,Login failed,
+2025-12-05T15:23:12.620002,https://www.tumblr.com/,failed,Login failed,final_www_tumblr_com_20251205_152324_53py.png
+2025-12-05T15:23:34.070264,https://me-page.com/,failed,Login failed,
+2025-12-05T15:33:26.811868,https://me-page.com/,success,Login attempt completed successfully,https://admin.me-page.com/projects,Projects,True,2,final_admin_me-page_com_20251205_153351_sdsw.png
+2025-12-05T15:38:20.658236,https://me-page.com/,success,Login attempt completed successfully,https://admin.me-page.com/projects,Projects,True,2,final_admin_me-page_com_20251205_153843_kxmk.png
+2025-12-05T15:59:53.814684,https://me-page.com/,success,Login successful,unknown,form,0.5,final_admin_me-page_com_20251205_160026_3s9f.png
+2025-12-05T16:00:36.377651,https://www.notion.so/,success,Login successful,unknown,form,0.5,final_www_notion_so_20251205_160106_jsbo.png
+2025-12-05T16:24:41.717466,https://me-page.com/,success,Login successful,unknown,form,0.5,final_admin_me-page_com_20251205_162508_lois.png
+2025-12-05T16:25:15.736546,https://www.notion.so/,success,Login successful,unknown,form,0.5,final_www_notion_so_20251205_162534_tu6v.png
+2025-12-05T16:50:02.094693,https://me-page.com/,success,Login successful,unknown,form,0.5,final_admin_me-page_com_20251205_165028_15pn.png
+2025-12-05T16:50:32.559615,https://www.notion.so/,success,Login successful,unknown,form,0.5,final_www_notion_so_20251205_165049_ski6.png
+2025-12-05T18:06:30.115049,https://me-page.com/,success,Login successful,unknown,form,0.5,final_admin_me-page_com_20251205_180702_xhah.png
+2025-12-05T18:07:05.734009,https://www.notion.so/,success,Login successful,unknown,form,0.5,final_www_notion_so_20251205_180723_cqu1.png
+2025-12-05T18:09:48.026523,https://www.tumblr.com/,failed,"Navigation failed: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=142.0.7444.176)
+Stacktrac",,,,
+2025-12-05T18:10:02.646006,https://me-page.com/,failed,"Navigation failed: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=142.0.7444.176)
+Stacktrac",,,,
+2025-12-05T18:10:21.283685,https://www.notion.so/,failed,"Navigation failed: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=142.0.7444.176)
+Stacktrac",,,,
+2025-12-05T18:10:53.774593,https://www.tumblr.com/,failed,"Navigation failed: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=142.0.7444.176)
+Stacktrac",,,,
+2025-12-05T18:11:07.579017,https://me-page.com/,failed,"Navigation failed: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=142.0.7444.176)
+Stacktrac",,,,
+2025-12-08T14:09:03.000145,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_website_20251208_141024_g4aa.png
+2025-12-08T14:10:38.645394,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_website_20251208_141151_dell.png
+2025-12-08T14:32:46.591055,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_website_20251208_143359_rd3q.png
+2025-12-08T14:36:01.468775,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_website_20251208_143711_iga9.png
+2025-12-08T14:40:38.941656,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_website_20251208_144150_ez51.png
+2025-12-08T15:08:10.263980,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_www_tumblr_com_20251208_150939_nl8r.png
+2025-12-08T15:19:43.134374,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_www_tumblr_com_20251208_152129_05j9.png
+2025-12-08T15:22:26.110337,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_www_tumblr_com_20251208_152354_y6f8.png
+2025-12-08T15:25:19.844407,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_www_tumblr_com_20251208_152634_lccn.png
+2025-12-08T16:34:10.652263,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_www_tumblr_com_20251208_163550_2i42.png
+2025-12-09T22:30:55.903406,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_www_tumblr_com_20251209_223154_1zp1.png
+2025-12-09T22:33:34.270051,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_www_tumblr_com_20251209_223458_irf9.png
+2025-12-09T22:36:43.158346,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_www_tumblr_com_20251209_223810_4rb9.png
+2025-12-11T12:29:54.568544,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_www_tumblr_com_20251211_123128_jnoj.png
+2025-12-11T12:31:52.446842,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_www_tumblr_com_20251211_123339_zecr.png
+2025-12-11T13:05:09.689842,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_www_tumblr_com_20251211_130608_jsul.png
+2025-12-11T14:26:20.910476,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_www_tumblr_com_20251211_142719_wld4.png
+2025-12-11T14:28:35.304423,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_www_tumblr_com_20251211_142959_hux1.png
+2025-12-11T14:31:26.302535,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_www_tumblr_com_20251211_143226_qbjl.png
+2025-12-11T14:52:37.197575,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_www_tumblr_com_20251211_145403_nhjp.png
+2025-12-11T14:57:18.356466,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_www_tumblr_com_20251211_145817_1nh0.png
+2025-12-11T15:06:10.959364,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_www_tumblr_com_20251211_150706_k70d.png
+2025-12-11T15:21:24.433982,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_www_tumblr_com_20251211_152232_vjnr.png
+2025-12-11T15:24:05.900116,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_www_tumblr_com_20251211_152501_woqy.png
+2025-12-11T15:47:17.267114,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/new/text,after_login_www_tumblr_com_20251211_154824_36g9.png
+2025-12-11T16:01:23.071513,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/dashboard,after_login_www_tumblr_com_20251211_160233_f8l9.png
+2025-12-11T16:16:49.650831,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/dashboard,after_login_www_tumblr_com_20251211_161829_1m1x.png
+2025-12-11T16:23:04.620934,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/dashboard,after_login_www_tumblr_com_20251211_162415_z4d0.png
+2025-12-11T16:31:47.671914,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/dashboard,after_login_www_tumblr_com_20251211_163258_4m49.png
+2025-12-13T12:18:55.901036,https://www.livejournal.com/,success,Login successful,False,https://www.livejournal.com/rsearch/?q=,after_login_www_livejournal_com_20251213_122007_iay7.png
+2025-12-13T12:24:37.556479,https://www.livejournal.com/,success,Login successful,False,https://www.livejournal.com/rsearch/?q=,after_login_www_livejournal_com_20251213_122554_q7gm.png
+2025-12-13T12:31:04.841427,https://www.livejournal.com/,success,Login successful,False,https://www.livejournal.com/rsearch/?q=,after_login_www_livejournal_com_20251213_123217_eqj4.png
+2025-12-13T12:32:30.365105,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/dashboard,after_login_www_tumblr_com_20251213_123407_1j4n.png
+2025-12-13T12:40:16.559576,https://www.livejournal.com/,success,Login successful,False,https://www.livejournal.com/rsearch/?q=,after_login_www_livejournal_com_20251213_124140_pmkj.png
+2025-12-13T12:44:40.020047,https://www.livejournal.com/,success,Login successful,False,https://www.livejournal.com/rsearch/?q=,after_login_www_livejournal_com_20251213_124612_63uj.png
+2025-12-13T12:57:10.436943,https://www.livejournal.com/,success,Login successful,False,https://www.livejournal.com/login.bml?returnto=https%3A%2F%2Fwww.livejournal.com%2Fpost%2F%3Fdraft%3,after_login_www_livejournal_com_20251213_125817_d51m.png
+2025-12-13T13:00:19.456829,https://www.livejournal.com/,success,Login successful,False,https://www.livejournal.com/post/,after_login_www_livejournal_com_20251213_130149_x0pi.png
+2025-12-13T13:02:01.092224,https://www.livejournal.com/,success,Login successful,False,https://www.livejournal.com/post/,after_login_www_livejournal_com_20251213_130328_6ci2.png
+2025-12-13T13:03:39.457482,https://www.livejournal.com/,success,Login successful,False,https://www.livejournal.com/post/,after_login_www_livejournal_com_20251213_130457_ygvc.png
+2025-12-13T13:17:32.670101,https://www.livejournal.com/,success,Login successful,False,https://www.livejournal.com/post/,after_login_www_livejournal_com_20251213_131902_krus.png
+2025-12-13T13:19:23.737248,https://www.livejournal.com/,success,Login successful,False,https://www.livejournal.com/post/,after_login_www_livejournal_com_20251213_132044_0xt6.png
+2025-12-13T13:23:41.636703,https://www.livejournal.com/,success,Login successful,False,https://www.livejournal.com/post/,after_login_www_livejournal_com_20251213_132503_0lry.png
+2025-12-13T13:26:57.364866,https://www.livejournal.com/,success,Login successful,False,https://www.livejournal.com/post/,after_login_www_livejournal_com_20251213_132821_ojl1.png
+2025-12-13T14:01:35.899855,https://www.livejournal.com/,success,Login successful,False,https://www.livejournal.com/post/,after_login_www_livejournal_com_20251213_140258_vja4.png
+2025-12-13T14:04:36.125205,https://www.livejournal.com/,success,Login successful,False,https://www.livejournal.com/post/,after_login_www_livejournal_com_20251213_140547_mtwg.png
+2025-12-13T14:10:26.157033,https://www.livejournal.com/,success,Login successful,False,https://kavikr543.livejournal.com/935.html?newpost=1,after_login_kavikr543_livejourna_20251213_141151_0ohd.png
+2025-12-13T14:12:49.490185,https://www.livejournal.com/,success,Login successful,False,https://kavikr543.livejournal.com/1226.html?newpost=1,after_login_kavikr543_livejourna_20251213_141410_w3mf.png
+2025-12-13T14:14:22.027360,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/dashboard,after_login_www_tumblr_com_20251213_141606_o60j.png
+2025-12-15T16:14:03,https://www.reddit.com/,success,Login successful,True,https://www.reddit.com/submit?type=TEXT,
+2025-12-15T16:19:27.602298,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/dashboard,after_login_www_tumblr_com_20251215_162031_bn3c.png
+2025-12-15T16:21:36,https://www.reddit.com/,success,Login successful,True,https://www.reddit.com/submit?type=TEXT,
+2025-12-15T16:56:23.814469,https://www.livejournal.com/,success,Login successful,True,https://kavikr543.livejournal.com/profile/,after_login_kavikr543_livejourna_20251215_165806_s0kx.png
+2025-12-15T17:04:38.571493,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/dashboard,after_login_www_tumblr_com_20251215_170541_i98r.png
+2025-12-15T17:06:49,https://www.reddit.com/,success,Login successful,True,https://www.reddit.com/submit?type=TEXT,
+2025-12-15T17:06:54.407674,https://www.livejournal.com/,success,Login successful,True,https://kavikr543.livejournal.com/profile/,after_login_kavikr543_livejourna_20251215_170844_vuy1.png
+2025-12-15T18:03:28.517554,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/dashboard,after_login_www_tumblr_com_20251215_180432_6s3v.png
+2025-12-15T18:05:38,https://www.reddit.com/,success,Login successful,True,https://www.reddit.com/submit?type=TEXT,
+2025-12-15T18:08:13.622672,https://www.livejournal.com/,success,Login successful,True,https://kavikr543.livejournal.com/profile/,after_login_kavikr543_livejourna_20251215_181014_assy.png
+2025-12-15T18:10:24.745184,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/dashboard,after_login_www_tumblr_com_20251215_181129_2etn.png
+2025-12-15T18:12:35,https://www.reddit.com/,success,Login successful,True,https://www.reddit.com/submit?type=TEXT,
+2025-12-16T15:45:06.890834,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/dashboard,after_login_www_tumblr_com_20251216_154616_dwsl.png
+2025-12-16T15:47:25,https://www.reddit.com/,success,Login successful,True,https://www.reddit.com/submit?type=TEXT,
+2025-12-22T14:49:07.399759,https://www.livejournal.com/,success,Login successful,True,https://kavikr543.livejournal.com/profile/,after_login_kavikr543_livejourna_20251222_145047_zcks.png
+2025-12-22T14:50:55.794467,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/dashboard,after_login_www_tumblr_com_20251222_145157_pdt3.png
+2025-12-22T14:53:05,https://www.reddit.com/,success,Login successful,True,https://www.reddit.com/submit?type=TEXT,
+2025-12-22T15:17:26,https://www.patreon.com/login,success,Patreon post successful,False,,
+2025-12-22T15:26:56,https://www.patreon.com/login,success,Patreon post successful,False,,
+2025-12-22T15:28:24,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-22T15:35:29,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-22T16:41:14,https://hackernoon.com/login?redirect=app,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cba788e5
+	0x7ff7cba78940
+	0x7ff7cb851465
+	0x7ff7cb899d83
+	0x7ff7cb8d1ee2
+	0x7ff7cb8cc500
+	0x7ff7cb8c",False,,
+2025-12-22T16:44:17,https://hackernoon.com/login?redirect=app,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cba788e5
+	0x7ff7cba78940
+	0x7ff7cb851465
+	0x7ff7cb899d83
+	0x7ff7cb8d1ee2
+	0x7ff7cb8cc500
+	0x7ff7cb8c",False,,
+2025-12-22T16:45:45,https://hackernoon.com/login?redirect=app,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cba788e5
+	0x7ff7cba78940
+	0x7ff7cb851465
+	0x7ff7cb899d83
+	0x7ff7cb8d1ee2
+	0x7ff7cb8cc500
+	0x7ff7cb8c",False,,
+2025-12-22T16:52:15,https://hackernoon.com/login?redirect=app,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cba788e5
+	0x7ff7cba78940
+	0x7ff7cb851465
+	0x7ff7cb899d83
+	0x7ff7cb8d1ee2
+	0x7ff7cb8cc500
+	0x7ff7cb8c",False,,
+2025-12-22T16:54:53,https://hackernoon.com/login?redirect=app,failed,"Hackernoon error: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=143.0.7499.147)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0",False,,
+2025-12-22T16:58:47,https://www.patreon.com/login,success,Patreon post successful,False,,
+2025-12-22T17:38:53,https://hackernoon.com/login?redirect=app,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cba788e5
+	0x7ff7cba78940
+	0x7ff7cb851465
+	0x7ff7cb899d83
+	0x7ff7cb8d1ee2
+	0x7ff7cb8cc500
+	0x7ff7cb8c",False,,
+2025-12-22T17:41:47,https://hackernoon.com/login?redirect=app,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cba788e5
+	0x7ff7cba78940
+	0x7ff7cb851465
+	0x7ff7cb899d83
+	0x7ff7cb8d1ee2
+	0x7ff7cb8cc500
+	0x7ff7cb8c",False,,
+2025-12-22T17:51:40,https://hackernoon.com/login?redirect=app,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cba788e5
+	0x7ff7cba78940
+	0x7ff7cb851465
+	0x7ff7cb899d83
+	0x7ff7cb8d1ee2
+	0x7ff7cb8cc500
+	0x7ff7cb8c",False,,
+2025-12-22T18:12:16,https://hackernoon.com/login?redirect=app,success,Hackernoon post successful,False,,
+2025-12-22T18:14:46,https://hackernoon.com/login?redirect=app,success,Hackernoon post successful,False,,
+2025-12-22T18:14:52.482642,https://www.livejournal.com/,success,Login successful,True,https://www.livejournal.com/login.bml?returnto=https%3A%2F%2Fwww.livejournal.com%2Fpost%2F%3Fdraft%3,after_login_www_livejournal_com_20251222_181613_u7k8.png
+2025-12-22T18:28:56,https://hackernoon.com/login?redirect=app,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cba788e5
+	0x7ff7cba78940
+	0x7ff7cb851465
+	0x7ff7cb899d83
+	0x7ff7cb8d1ee2
+	0x7ff7cb8cc500
+	0x7ff7cb8c",False,,
+2025-12-22T18:34:29.284857,https://www.livejournal.com/,success,Login successful,True,https://www.livejournal.com/login.bml?returnto=https%3A%2F%2Fwww.livejournal.com%2Fpost%2F%3Fdraft%3,after_login_www_livejournal_com_20251222_183556_605w.png
+2025-12-22T18:36:45.262673,https://www.livejournal.com/,failed,"Error: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=143.0.7499.147)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0",False,,
+2025-12-22T18:38:09.511392,https://www.livejournal.com/,success,Login successful,True,https://www.livejournal.com/login.bml?returnto=https%3A%2F%2Fwww.livejournal.com%2Fpost%2F%3Fdraft%3,after_login_www_livejournal_com_20251222_183926_bt1j.png
+2025-12-22T19:02:46.393146,https://www.livejournal.com/,success,Login successful,True,https://kavikr543.livejournal.com/profile/,after_login_kavikr543_livejourna_20251222_190432_l5um.png
+2025-12-22T19:13:42,https://www.patreon.com/login,success,Patreon post successful,False,,
+2025-12-22T19:19:31,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-23T11:35:40,https://hackernoon.com/login,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77fc188e5
+	0x7ff77fc18940
+	0x7ff77f9f1465
+	0x7ff77fa39d83
+	0x7ff77fa71ee2
+	0x7ff77fa6c500
+	0x7ff77fa6",False,,
+2025-12-23T11:50:08,https://hackernoon.com/login,failed,"Hackernoon error: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=143.0.7499.170)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0",False,,
+2025-12-23T11:52:09,https://hackernoon.com/login,failed,"Hackernoon error: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=143.0.7499.170)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0",False,,
+2025-12-23T12:18:25,https://hackernoon.com/login,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77fc188e5
+	0x7ff77fc18940
+	0x7ff77f9f1465
+	0x7ff77fa39d83
+	0x7ff77fa71ee2
+	0x7ff77fa6c500
+	0x7ff77fa6",False,,
+2025-12-23T12:50:33,https://hackernoon.com/login,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77fc188e5
+	0x7ff77fc18940
+	0x7ff77f9f1465
+	0x7ff77fa39d83
+	0x7ff77fa71ee2
+	0x7ff77fa6c500
+	0x7ff77fa6",False,,
+2025-12-23T13:01:49,https://hackernoon.com/login,success,Hackernoon post successful,False,,
+2025-12-23T13:02:07,https://hackernoon.com/login,failed,"Hackernoon error: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=143.0.7499.170)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0",False,,
+2025-12-23T13:03:43,https://hackernoon.com/login,failed,"Hackernoon error: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=143.0.7499.170)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0",False,,
+2025-12-23T13:08:15,https://hackernoon.com/login,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77fc188e5
+	0x7ff77fc18940
+	0x7ff77f9f1465
+	0x7ff77fa39d83
+	0x7ff77fa71ee2
+	0x7ff77fa6c500
+	0x7ff77fa6",False,,
+2025-12-23T13:13:10,https://hackernoon.com/login,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77fc188e5
+	0x7ff77fc18940
+	0x7ff77f9f1465
+	0x7ff77fa39d83
+	0x7ff77fa71ee2
+	0x7ff77fa6c500
+	0x7ff77fa6",False,,
+2025-12-23T13:20:43,https://hackernoon.com/login,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77fc188e5
+	0x7ff77fc18940
+	0x7ff77f9f1465
+	0x7ff77fa39d83
+	0x7ff77fa71ee2
+	0x7ff77fa6c500
+	0x7ff77fa6",False,,
+2025-12-23T14:04:38,https://hackernoon.com/login,success,Hackernoon automation completed,False,,
+2025-12-23T14:06:12,https://hackernoon.com/login,success,Hackernoon automation completed,False,,
+2025-12-23T14:06:32,https://hackernoon.com/login,success,Hackernoon automation completed,False,,
+2025-12-23T14:26:33,https://hackernoon.com/login,success,Hackernoon post successful,False,,
+2025-12-23T14:31:13,https://hackernoon.com/login,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6dacc88e5
+	0x7ff6dacc8940
+	0x7ff6daaa1465
+	0x7ff6daae9d83
+	0x7ff6dab21ee2
+	0x7ff6dab1c500
+	0x7ff6dab1",False,,
+2025-12-23T15:14:03,https://hackernoon.com/login,success,Hackernoon post successful,False,,
+2025-12-23T15:19:48,https://hackernoon.com/login,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6dacc88e5
+	0x7ff6dacc8940
+	0x7ff6daaa1465
+	0x7ff6daae9d83
+	0x7ff6dab21ee2
+	0x7ff6dab1c500
+	0x7ff6dab1",False,,
+2025-12-23T15:21:48,https://hackernoon.com/login,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6dacc88e5
+	0x7ff6dacc8940
+	0x7ff6daaa1465
+	0x7ff6daae9d83
+	0x7ff6dab21ee2
+	0x7ff6dab1c500
+	0x7ff6dab1",False,,
+2025-12-23T15:25:15,https://hackernoon.com/login,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6dacc88e5
+	0x7ff6dacc8940
+	0x7ff6daaa1465
+	0x7ff6daae9d83
+	0x7ff6dab21ee2
+	0x7ff6dab1c500
+	0x7ff6dab1",False,,
+2025-12-23T15:28:39,https://hackernoon.com/login,success,Hackernoon automation completed,False,,
+2025-12-23T15:35:47,https://hackernoon.com/login,success,Hackernoon automation completed,False,,
+2025-12-23T15:35:53.845950,https://www.livejournal.com/,success,Login successful,True,https://kavikr543.livejournal.com/profile/,after_login_kavikr543_livejourna_20251223_153848_f891.png
+2025-12-23T15:38:58.256455,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/dashboard,after_login_www_tumblr_com_20251223_154057_ytus.png
+2025-12-23T17:41:00,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-23T17:41:18,https://hackernoon.com/login,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6011f88e5
+	0x7ff6011f8940
+	0x7ff600fd1465
+	0x7ff601019d83
+	0x7ff601051ee2
+	0x7ff60104c500
+	0x7ff60104",False,,
+2025-12-23T18:08:49,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-23T18:10:04,https://hackernoon.com/login,failed,"Hackernoon error: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=143.0.7499.170)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0",False,,
+2025-12-23T18:12:00,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-23T18:17:37,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-23T18:19:13,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-23T18:24:08,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-23T18:30:23,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-23T18:31:41,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-23T18:32:24,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-23T18:33:15,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-23T18:43:21,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-24T11:10:34,https://medium.com/,success,Medium automation successful,False,,
+2025-12-24T13:16:58,https://medium.com/,success,Medium login successful,False,,
+2025-12-24T13:22:12,https://medium.com/,success,Medium login successful,False,,
+2025-12-24T14:29:06,https://medium.com/,success,Medium login successful,False,,
+2025-12-24T14:46:59,https://medium.com/,success,Medium login successful,False,,
+2025-12-24T15:11:11,https://medium.com/,success,Medium login successful,False,,
+2025-12-24T15:35:00,https://medium.com/,success,Medium login successful,False,,
+2025-12-24T15:59:59,https://medium.com/,success,Medium login successful,False,,
+2025-12-24T16:19:14,https://medium.com/,success,Medium login successful,False,,
+2025-12-24T16:26:11,https://medium.com/,success,Medium login successful,False,,
+2025-12-24T16:50:25,https://medium.com/,success,Medium login successful,False,,
+2025-12-24T17:58:20,https://medium.com/,success,Medium login successful,False,,
+2025-12-24T18:13:16,https://medium.com/,success,Medium login successful,False,,
+2025-12-24T18:20:41,https://medium.com/,success,Medium login successful,False,,
+2025-12-24T18:37:28,https://medium.com/,success,Medium login successful,False,,
+2025-12-24T18:40:59,https://medium.com/,success,Medium login successful,False,,
+2025-12-24T19:06:32,https://medium.com/,success,Medium login successful,False,,
+2025-12-25T10:45:07,https://medium.com/,success,Medium login successful,False,,
+2025-12-25T11:02:16,https://medium.com/,success,Medium login successful,False,,
+2025-12-25T11:58:36,https://www.writerscafe.org/login,success,WritersCafe post successful,False,,
+2025-12-25T12:25:53,https://substack.com/sign-in,success,Substack post successful,False,,
+2025-12-25T12:59:39,https://substack.com/sign-in,success,Substack post successful,False,,
+2025-12-25T13:03:24,https://hackernoon.com/login,success,Hackernoon automation completed,False,,
+2025-12-25T13:03:33.675838,https://www.livejournal.com/,success,Login successful,True,https://www.livejournal.com/login.bml?returnto=https%3A%2F%2Fwww.livejournal.com%2Fpost%2F%3Fdraft%3,after_login_www_livejournal_com_20251225_130440_htfx.png
+2025-12-25T13:04:50.896335,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/dashboard,after_login_www_tumblr_com_20251225_130556_f6sq.png
+2025-12-25T13:06:40,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-25T13:09:27,https://www.patreon.com/login,success,Patreon post successful,False,,
+2025-12-25T13:14:55,https://medium.com/,success,Medium login successful,False,,
+2025-12-25T13:15:41,https://www.writerscafe.org/login/,success,WritersCafe post successful,False,,
+2025-12-25T13:26:31,https://hackernoon.com/login,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c54788e5
+	0x7ff7c5478940
+	0x7ff7c5251465
+	0x7ff7c5299d83
+	0x7ff7c52d1ee2
+	0x7ff7c52cc500
+	0x7ff7c52c",False,,
+2025-12-25T13:26:39.820062,https://www.livejournal.com/,success,Login successful,True,https://kavikr543.livejournal.com/profile/,after_login_kavikr543_livejourna_20251225_132813_i331.png
+2025-12-25T14:18:10,https://hackernoon.com/login,success,Hackernoon automation completed,False,,
+2025-12-25T14:29:03.007053,https://www.livejournal.com/,success,Login successful,True,https://kavikr543.livejournal.com/profile/,after_login_kavikr543_livejourna_20251225_143024_dt1f.png
+2025-12-25T14:34:19.507352,https://www.livejournal.com/,failed,"Error: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=143.0.7499.170)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0",False,,
+2025-12-25T14:52:45.857760,https://www.livejournal.com/,success,Login successful,True,https://kavikr543.livejournal.com/profile/,after_login_kavikr543_livejourna_20251225_145413_lyuq.png
+2025-12-25T15:18:35,https://substack.com/sign-in,success,Substack post successful,False,,
+2025-12-25T15:21:05,https://hackernoon.com/login,success,Hackernoon automation completed,False,,
+2025-12-25T15:21:12.352636,https://www.livejournal.com/,success,Login successful,True,https://kavikr543.livejournal.com/profile/,after_login_kavikr543_livejourna_20251225_152255_akr1.png
+2025-12-25T15:23:03.806932,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/dashboard,after_login_www_tumblr_com_20251225_152430_x0tu.png
+2025-12-25T15:25:20,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-25T15:28:29,https://www.patreon.com/login,success,Patreon post successful,False,,
+2025-12-25T15:43:21,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-25T16:33:11,https://medium.com/,success,Medium login successful,False,,
+2025-12-25T16:54:41.654405,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/dashboard,after_login_www_tumblr_com_20251225_165542_m63w.png
+2025-12-25T17:08:38.834786,https://www.tumblr.com/login,success,Login successful,False,https://www.tumblr.com/dashboard,after_login_www_tumblr_com_20251225_170946_ttu2.png
+2025-12-25T18:13:19,https://substack.com/sign-in,success,Substack post successful,False,,
+2025-12-25T18:14:36,https://hackernoon.com/login,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff76ee088e5
+	0x7ff76ee08940
+	0x7ff76ebe1465
+	0x7ff76ec29d83
+	0x7ff76ec61ee2
+	0x7ff76ec5c500
+	0x7ff76ec5",False,,
+2025-12-25T18:14:41.212809,https://www.livejournal.com/,success,Login successful,True,https://www.livejournal.com/login.bml?returnto=https%3A%2F%2Fwww.livejournal.com%2Fpost%2F%3Fdraft%3,after_login_www_livejournal_com_20251225_181557_mmfb.png
+2025-12-25T18:17:10,https://hackernoon.com/login,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff76ee088e5
+	0x7ff76ee08940
+	0x7ff76ebe1465
+	0x7ff76ec29d83
+	0x7ff76ec61ee2
+	0x7ff76ec5c500
+	0x7ff76ec5",False,,
+2025-12-25T18:18:39,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-25T18:24:57,https://substack.com/sign-in,success,Substack post successful,False,,
+2025-12-25T18:25:21,https://hackernoon.com/login,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff76ee088e5
+	0x7ff76ee08940
+	0x7ff76ebe1465
+	0x7ff76ec29d83
+	0x7ff76ec61ee2
+	0x7ff76ec5c500
+	0x7ff76ec5",False,,
+2025-12-25T18:26:19,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-25T18:37:37,https://hackernoon.com/login,failed,"Hackernoon error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff76ee088e5
+	0x7ff76ee08940
+	0x7ff76ebe1465
+	0x7ff76ec29d83
+	0x7ff76ec61ee2
+	0x7ff76ec5c500
+	0x7ff76ec5",False,,
+2025-12-25T18:50:06.305751,https://www.livejournal.com/,success,Login successful,True,https://www.livejournal.com/login.bml?returnto=https%3A%2F%2Fwww.livejournal.com%2Fpost%2F%3Fdraft%3,after_login_www_livejournal_com_20251225_185111_hsda.png
+2025-12-25T18:52:05,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-25T19:21:14,https://www.livejournal.com/,success,LiveJournal post successful,True,,
+2025-12-25T19:26:05,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-25T19:26:59,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-26T10:45:30,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-26T10:46:35,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-26T11:40:28,https://hackernoon.com/login,failed,"Hackernoon error: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=143.0.7499.169)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0",False,,
+2025-12-26T12:29:26,https://www.reddit.com/,success,Reddit login attempted,False,,
+2025-12-26T12:47:21,https://www.quora.com/,success,Quora run finished,False,,
+2025-12-26T12:52:20,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2025-12-26T13:00:13,https://substack.com/sign-in,success,Substack post successful,False,,
+2025-12-26T13:05:56,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2025-12-26T13:06:03,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2025-12-26T13:09:28,https://medium.com/,success,Medium attempt finished,False,,
+2025-12-26T13:17:13,https://medium.com/,success,Medium attempt finished,False,,
+2025-12-26T13:33:38,https://www.writerscafe.org/login/,success,WritersCafe run finished,False,,
+2025-12-26T13:38:15,https://www.writerscafe.org/login/,success,WritersCafe run finished,False,,
+2025-12-26T13:42:21,https://hackernoon.com/login,success,Hackernoon run finished,False,,
+2025-12-26T13:42:35,https://hackernoon.com/login,success,Hackernoon run finished,False,,
+2025-12-26T13:45:45,https://www.livejournal.com/,success,LiveJournal post successful,True,,
+2025-12-26T14:44:40,https://www.tumblr.com/login,success,Tumblr post successful,True,,
+2025-12-26T14:48:48,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-26T14:49:10,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-26T14:51:01,https://hackernoon.com/login,success,Hackernoon run finished,False,,
+2025-12-26T14:58:19,https://hackernoon.com/login,success,Hackernoon run finished,False,,
+2025-12-26T15:02:17,https://hackernoon.com/login,success,Hackernoon run finished,False,,
+2025-12-27T10:51:38,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2025-12-29T18:04:15,https://www.tumblr.com/login,success,Tumblr post successful,True,,
+2025-12-30T13:08:40,https://www.quora.com/,success,Quora run finished,False,,
+2025-12-30T13:10:20,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-30T13:15:22,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-30T13:26:56,https://www.quora.com/,success,Quora run finished,False,,
+2025-12-30T13:30:28,https://www.quora.com/,success,Quora run finished,False,,
+2025-12-30T14:10:37,https://www.tumblr.com/login,success,Tumblr post successful,True,,
+2025-12-30T14:18:03,https://substack.com/sign-in,success,Substack post successful,False,,
+2025-12-30T14:25:15,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2025-12-30T14:38:05,https://www.livejournal.com/,success,LiveJournal post successful,True,,
+2025-12-30T14:50:44,https://medium.com/,success,Medium attempt finished,False,,
+2025-12-30T14:58:00,https://medium.com/,success,Medium attempt finished,False,,
+2025-12-30T15:13:48,https://medium.com/,success,Medium attempt finished,False,,
+2025-12-30T16:17:43,https://substack.com/sign-in,success,Substack post successful,False,,
+2025-12-30T16:23:29,https://substack.com/sign-in,success,Substack post successful,False,,
+2025-12-30T16:26:33,https://substack.com/sign-in,success,Substack post successful,False,,
+2025-12-30T16:30:09,https://substack.com/sign-in,success,Substack post successful,False,,
+2025-12-30T16:36:16,https://www.tumblr.com/login,success,Tumblr post successful,True,,
+2025-12-31T11:09:35,https://www.quora.com/,success,Quora run finished,False,,
+2025-12-31T11:21:43,https://www.quora.com/,success,Quora run finished,False,,
+2025-12-31T11:26:45,https://www.quora.com/,success,Quora run finished,False,,
+2025-12-31T11:37:51,https://www.quora.com/,success,Quora run finished,False,,
+2025-12-31T12:24:36,https://medium.com/,success,Medium attempt finished,False,,
+2025-12-31T12:31:52,https://substack.com/sign-in,success,Substack post successful,False,,
+2025-12-31T12:34:44,https://dev.to/enter,success,Dev.to post successful,False,,
+2025-12-31T12:36:06,https://www.tumblr.com/login,success,Tumblr post successful,True,,
+2025-12-31T12:40:20,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2025-12-31T12:50:25,https://www.livejournal.com/,success,LiveJournal post successful,True,,
+2025-12-31T12:56:14,https://substack.com/sign-in,success,Substack post successful,False,,
+2025-12-31T14:15:47,https://www.quora.com/,success,Quora run finished,False,,
+2025-12-31T14:56:21,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2026-01-01T12:57:00,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2026-01-01T15:29:43,https://medium.com/,success,Medium attempt finished,False,,
+2026-01-02T12:41:13,https://www.tumblr.com/login,success,Tumblr post successful,True,,
+2026-01-02T13:37:57,https://www.quora.com/,success,Quora run finished,False,,
+2026-01-02T15:09:20,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2026-01-02T15:52:15,https://www.livejournal.com/,success,LiveJournal post successful,True,,
+2026-01-02T15:55:18,https://dev.to/enter,success,Dev.to post successful,False,,
+2026-01-02T15:58:00,https://dev.to/enter,success,Dev.to post successful,False,,
+2026-01-02T16:04:42,https://dev.to/enter,success,Dev.to post successful,False,,
+2026-01-02T16:14:30,https://medium.com/,success,Medium attempt finished,False,,
+2026-01-02T18:14:21,https://dev.to/enter,success,Dev.to post successful,False,,
+2026-01-02T18:26:17,https://substack.com/sign-in,success,Substack post successful,False,,
+2026-01-02T19:00:38,https://www.tumblr.com/login,success,Tumblr post successful,True,,
+2026-01-05T11:32:27,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2026-01-05T11:39:19,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2026-01-05T11:55:21,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2026-01-05T11:59:23,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2026-01-05T12:18:55,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2026-01-05T14:42:45,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2026-01-05T14:43:58,https://www.tumblr.com/login,success,Tumblr post successful,True,,
+2026-01-05T14:45:08,https://www.livejournal.com/,success,LiveJournal post successful,True,,
+2026-01-05T14:45:47,https://dev.to/enter,success,Dev.to post successful,False,,
+2026-01-05T14:47:59,https://substack.com/sign-in,success,Substack post successful,False,,
+2026-01-05T14:59:04,https://www.livejournal.com/,success,LiveJournal post successful,True,,
+2026-01-05T15:02:14,https://medium.com/,success,Medium attempt finished,False,,
+2026-01-05T15:04:18,https://dev.to/enter,success,Dev.to post successful,False,,
+2026-01-07T16:40:50,https://www.livejournal.com/,success,LiveJournal post successful,True,,
+2026-01-07T17:46:16,https://www.tumblr.com/login,success,Tumblr post successful,True,,
+2026-01-07T17:49:55,https://dev.to/enter,success,Dev.to post successful,False,,
+2026-01-07T17:50:27,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2026-01-07T17:51:07,https://www.writerscafe.org/login/,success,WritersCafe run finished,False,,
+2026-01-07T17:59:47,https://www.tumblr.com/login,success,Tumblr post successful,True,,
+2026-01-07T18:23:43,https://www.tumblr.com/login,success,Tumblr post successful,True,,
+2026-01-07T19:10:55,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2026-01-08T12:26:05,https://substack.com/sign-in,success,Substack post successful,False,,
+2026-01-08T12:39:53,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2026-01-08T13:13:45,https://www.livejournal.com/,success,LiveJournal post successful,True,,
+2026-01-08T14:08:31,https://medium.com/,success,Medium attempt finished,False,,
+2026-01-08T14:10:55,https://medium.com/,success,Medium attempt finished,False,,
+2026-01-08T14:14:55,https://medium.com/,success,Medium attempt finished,False,,
+2026-01-08T15:42:20,https://dev.to/enter,success,Dev.to post successful,False,,
+2026-01-08T15:48:07,https://dev.to/enter,success,Dev.to post successful,False,,
+2026-01-08T15:49:52,https://dev.to/enter,success,Dev.to post successful,False,,
+2026-01-08T16:05:01,https://www.quora.com/,success,Quora run finished,False,,
+2026-01-08T16:45:21,https://www.quora.com/,success,Quora run finished,False,,
+2026-01-08T16:53:25,https://dev.to/enter,success,Dev.to post successful,False,,
+2026-01-08T17:43:09,https://dev.to/enter,success,Dev.to post successful,False,,
+2026-01-08T17:46:00,https://dev.to/enter,success,Dev.to post successful,False,,
+2026-01-08T17:50:16,https://dev.to/enter,success,Dev.to post successful,False,,
+2026-01-08T18:00:16,https://dev.to/enter,success,Dev.to post successful,False,,
+2026-01-08T18:02:02,https://dev.to/enter,success,Dev.to post successful,False,,
+2026-01-08T18:32:04,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2026-01-08T18:56:45,https://substack.com/sign-in,success,Substack post successful,False,,
+2026-01-09T11:47:20,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2026-01-09T13:10:38,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2026-01-09T13:57:16,https://substack.com/sign-in,success,Substack post successful,False,,
+2026-01-09T14:41:35,https://www.livejournal.com/,success,LiveJournal post successful,True,,
+2026-01-09T15:07:17,https://medium.com/,success,Medium attempt finished,False,,
+2026-01-09T15:38:08,https://dev.to/enter,success,Dev.to post successful,False,,
+2026-01-09T16:53:46,https://www.tumblr.com/login,success,Tumblr post successful,True,,
+2026-01-09T18:12:53,https://www.tumblr.com/login,success,Tumblr post successful,True,,
+2026-01-09T18:26:28,https://www.quora.com/,success,Quora run finished,False,,
+2026-01-13T12:35:50,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2026-01-13T12:45:11,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2026-01-13T13:07:32,https://www.tumblr.com/login,success,Tumblr post successful,True,,
+2026-01-13T13:16:36,https://www.livejournal.com/,success,LiveJournal post successful,True,,
+2026-01-13T17:51:29,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2026-01-14T11:34:46,https://www.tumblr.com/login,success,Tumblr post successful,True,,
+2026-01-14T13:23:49,https://www.patreon.com/login,success,Patreon automation finished,False,,
+2026-01-14T13:30:29,https://www.tumblr.com/login,success,Tumblr post successful,True,,
+2026-01-14T14:38:22,https://www.tumblr.com/login,success,Tumblr post successful,True,,
+2026-01-14T15:00:18,https://www.tumblr.com/login,success,Tumblr post successful,True,,
+2026-01-14T15:09:43,https://www.livejournal.com/,success,LiveJournal post successful,True,,
+2026-01-14T15:15:06,https://substack.com/sign-in,success,Substack post successful,False,,
+2026-01-14T15:21:21,https://medium.com/,success,Medium attempt finished,False,,
+2026-01-14T15:22:18,https://dev.to/enter,success,Dev.to post successful,False,,
+2026-01-14T15:24:42,https://dev.to/enter,success,Dev.to post successful,False,,

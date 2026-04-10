@@ -1,0 +1,262 @@
+{% extends 'base.html' %}
+
+{% block title %}Post Status - Backlink AI{% endblock %}
+{% block page_title %}Post Status History{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-0">
+
+    <!-- Website Stats Summary -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="float-card">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="fw-bold m-0"><i class="fas fa-chart-pie me-2 text-primary"></i>Website History Breakdown</h5>
+                    {% if platform_filter %}
+                    <a href="?status={{ status }}&preset={{ preset }}&start_date={{ start_date }}&end_date={{ end_date }}&page_size={{ page_size }}" class="btn btn-sm btn-outline-secondary rounded-pill">
+                        <i class="fas fa-times me-1"></i>Clear Filter
+                    </a>
+                    {% endif %}
+                </div>
+                <div class="row g-3">
+                    {% for stat in website_stats %}
+                    <div class="col-md-3 col-sm-6">
+                        <a href="?status={{ status }}&preset={{ preset }}&start_date={{ start_date }}&end_date={{ end_date }}&page_size={{ page_size }}&platform={{ stat.domain_filter }}" class="text-decoration-none text-dark d-block h-100">
+                            <div class="p-3 border rounded h-100 position-relative {% if platform_filter == stat.domain_filter %}bg-white border-primary shadow-sm ring-2{% else %}bg-light border-light{% endif %}" style="transition: all 0.2s;">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h6 class="fw-bold text-truncate mb-0" style="max-width: 70%;" title="{{ stat.label }}">{{ stat.label }}</h6>
+                                    <span class="badge {% if platform_filter == stat.domain_filter %}bg-primary{% else %}bg-secondary{% endif %} rounded-pill">{{ stat.total }} Posts</span>
+                                </div>
+                                <div class="d-flex justify-content-between small text-muted">
+                                    <span><i class="fas fa-check-circle text-success me-1"></i>{{ stat.success }}</span>
+                                    <span><i class="fas fa-times-circle text-danger me-1"></i>{{ stat.failed }}</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    {% empty %}
+                    <div class="col-12 text-center text-muted py-3">
+                        No history data available yet.
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="float-card">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="fw-bold m-0"><i class="fas fa-filter me-2 text-primary"></i>Filters</h5>
+                </div>
+                
+                <form method="GET" class="row g-3">
+                    <div class="col-md-2">
+                        <label class="form-label text-muted small fw-bold">Status</label>
+                        <select name="status" class="form-select border-0 bg-light">
+                            <option value="all" {% if status == 'all' %}selected{% endif %}>All Status</option>
+                            <option value="success" {% if status == 'success' %}selected{% endif %}>Success</option>
+                            <option value="failed" {% if status == 'failed' %}selected{% endif %}>Failed</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label text-muted small fw-bold">Preset</label>
+                        <select name="preset" class="form-select border-0 bg-light" onchange="this.form.submit()">
+                            <option value="" {% if not preset %}selected{% endif %}>Custom Range</option>
+                            <option value="today" {% if preset == 'today' %}selected{% endif %}>Today</option>
+                            <option value="week" {% if preset == 'week' %}selected{% endif %}>This Week</option>
+                            <option value="month" {% if preset == 'month' %}selected{% endif %}>This Month</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label text-muted small fw-bold">Start Date</label>
+                        <input type="date" name="start_date" class="form-control border-0 bg-light" value="{{ start_date }}">
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label text-muted small fw-bold">End Date</label>
+                        <input type="date" name="end_date" class="form-control border-0 bg-light" value="{{ end_date }}">
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label text-muted small fw-bold">Page Size</label>
+                        <select name="page_size" class="form-select border-0 bg-light" onchange="this.form.submit()">
+                            {% for size in page_sizes %}
+                            <option value="{{ size }}" {% if page_size == size %}selected{% endif %}>{{ size }} items</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end">
+                        <button type="submit" class="btn btn-primary-custom w-100">
+                            <i class="fas fa-search me-2"></i>Apply
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data Table -->
+    <div class="row">
+        <div class="col-12">
+            <div class="float-card">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h5 class="fw-bold m-0"><i class="fas fa-list-alt me-2 text-primary"></i>Automation Results</h5>
+                    
+                    <form method="POST" action="{% url 'history_bulk_delete' %}" id="bulkDeleteForm" style="display: none;">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger btn-sm rounded-pill px-3" onclick="return confirm('Are you sure you want to delete selected records?')">
+                            <i class="fas fa-trash me-2"></i>Delete Selected
+                        </button>
+                    </form>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                        <thead class="text-muted small text-uppercase bg-light">
+                            <tr>
+                                <th class="rounded-start ps-3" style="width: 50px;">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="selectAll">
+                                    </div>
+                                </th>
+                                <th>Timestamp</th>
+                                <th>Website</th>
+                                <th>Status</th>
+                                <th>Message</th>
+                                <th class="rounded-end text-end pe-3">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="border-top-0">
+                            {% for record in records %}
+                            <tr>
+                                <td class="ps-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="ids" value="{{ record.id }}" form="bulkDeleteForm">
+                                    </div>
+                                </td>
+                                <td class="text-nowrap text-white">
+                                    <i class="far fa-clock me-2 opacity-50"></i>{{ record.timestamp|slice:":19" }}
+                                </td>
+                                <td>
+                                    {% if record.website %}
+                                    <a href="{{ record.website }}" target="_blank" class="text-decoration-none fw-medium text-dark">
+                                        <i class="fas fa-external-link-alt me-1 small text-muted"></i>
+                                        {{ record.website|truncatechars:40 }}
+                                    </a>
+                                    {% else %}
+                                    <span class="text-muted">-</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {% if record.status|lower == 'success' %}
+                                    <span class="badge bg-success-subtle text-success rounded-pill px-3">Success</span>
+                                    {% else %}
+                                    <span class="badge bg-danger-subtle text-danger rounded-pill px-3">{{ record.status|default:"Failed"|title }}</span>
+                                    {% endif %}
+                                </td>
+                                <td class="text-muted small">
+                                    {{ record.message|truncatechars:60 }}
+                                </td>
+                                <td class="text-end pe-3">
+                                    <form method="POST" action="{% url 'history_delete' %}" class="d-inline">
+                                        {% csrf_token %}
+                                        <input type="hidden" name="id" value="{{ record.id }}">
+                                        <button type="submit" class="btn btn-link text-danger p-0" onclick="return confirm('Delete this record?')" title="Delete">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            {% empty %}
+                            <tr>
+                                <td colspan="6" class="text-center py-5">
+                                    <div class="text-muted opacity-50 mb-3">
+                                        <i class="fas fa-inbox fa-3x"></i>
+                                    </div>
+                                    <h6 class="text-muted">No records found matching your criteria</h6>
+                                    <p class="text-muted small mb-0">Try adjusting the filters above</p>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination -->
+                {% if total_pages > 1 %}
+                <div class="d-flex justify-content-center mt-4">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination pagination-sm mb-0">
+                            {% if page > 1 %}
+                            <li class="page-item">
+                                <a class="page-link border-0 rounded-start-pill px-3" href="?page={{ page|add:'-1' }}&status={{ status }}&page_size={{ page_size }}&preset={{ preset }}&start_date={{ start_date }}&end_date={{ end_date }}">
+                                    <i class="fas fa-chevron-left me-1"></i> Prev
+                                </a>
+                            </li>
+                            {% endif %}
+                            
+                            <li class="page-item disabled">
+                                <span class="page-link border-0 bg-transparent text-muted px-3">
+                                    Page {{ page }} of {{ total_pages }}
+                                </span>
+                            </li>
+                            
+                            {% if page < total_pages %}
+                            <li class="page-item">
+                                <a class="page-link border-0 rounded-end-pill px-3" href="?page={{ page|add:'1' }}&status={{ status }}&page_size={{ page_size }}&preset={{ preset }}&start_date={{ start_date }}&end_date={{ end_date }}">
+                                    Next <i class="fas fa-chevron-right ms-1"></i>
+                                </a>
+                            </li>
+                            {% endif %}
+                        </ul>
+                    </nav>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select All Checkbox Logic
+        const selectAll = document.getElementById('selectAll');
+        const bulkForm = document.getElementById('bulkDeleteForm');
+        
+        if(selectAll) {
+            selectAll.addEventListener('change', function() {
+                const checkboxes = document.getElementsByName('ids');
+                
+                for (let i = 0; i < checkboxes.length; i++) {
+                    checkboxes[i].checked = this.checked;
+                }
+                
+                updateBulkButton();
+            });
+        }
+        
+        // Individual Checkbox Logic
+        const checkboxes = document.getElementsByName('ids');
+        for (let i = 0; i < checkboxes.length; i++) {
+            checkboxes[i].addEventListener('change', updateBulkButton);
+        }
+
+        function updateBulkButton() {
+            let anyChecked = false;
+            const checkboxes = document.getElementsByName('ids');
+            for (let i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    anyChecked = true;
+                    break;
+                }
+            }
+            if(bulkForm) {
+                bulkForm.style.display = anyChecked ? 'block' : 'none';
+            }
+        }
+    });
+</script>
+{% endblock %}
